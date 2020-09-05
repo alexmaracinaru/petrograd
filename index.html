@@ -6,23 +6,24 @@
     <title>Restaurant Website - Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <div class="logo_nav_container">
         <h1 class="logo">P e t r o g r a d</h1>
         <nav>
+          <div class="nav_underline"></div>
           <ul>
-            <li><a href="#">Starters. </a></li>
-            <li><a href="#">Mains. </a></li>
-            <li><a href="#">Desserts. </a></li>
-            <li><a href="#">Drinks. </a></li>
-            <li><a href="#">Sideorders. </a></li>
-            <div class="nav_underline"></div>
+            <li><a href="#starter">Starters. </a></li>
+            <li><a href="#main">Mains. </a></li>
+            <li><a href="#dessert">Desserts. </a></li>
+            <li><a href="#drinks">Drinks. </a></li>
+            <li><a href="#sideorders">Sideorders. </a></li>
           </ul>
         </nav>
         <p>Apparently a Danish restaurant with a Russian cuisine + name</p>
       </div>
-      <img src="/SpoonBg.png" alt="" />
+      <!--    <img src="/SpoonBg.png" alt="" />-->
       <div class="scroll_down">
         <p>Scroll Down</p>
       </div>
@@ -46,7 +47,7 @@
           />
           <div class="discount_icon">
             <p>
-              30% <br />
+              <span class="discount">30%</span> <br />
               Off
             </p>
           </div>
@@ -54,82 +55,71 @@
         <div class="card_content">
           <h3 class="card_heading">Russian ringbread Lasse waas here</h3>
           <p class="short_desc">Russisk tapas med tomater og kød</p>
-          <a href="./modal.html">
-            <button class="details_btn">Details</button>
-          </a>
+          <button class="details_btn">Details</button>
         </div>
         <div class="card_footer">
-          <svg
-            class="card_veg hidden"
-            data-name="Layer 3"
-            id="Layer_3"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title />
-            <path
-              d="M69.8252,30.17472c-.01117-.01117-.02643-.01447-.03791-.02521A28.02809,28.02809,0,0,0,30.1496,69.7872c.01074.01148.014.02674.0252.03791s.02643.01446.03791.02521A28.02809,28.02809,0,0,0,69.8504,30.21262C69.83966,30.20115,69.83636,30.18589,69.8252,30.17472ZM24.958,49.99991A25.02405,25.02405,0,0,1,66.60339,31.27543l-8.96325,8.96325a33.789,33.789,0,0,1-6.76807-3.76318c-5.60937-4.00586-10.51172-4.97559-14.57227-2.8877-5.51757,2.83985-7.57421,10.59961-7.57421,14.82325v6.84472c0,3.24372,2.11328,6.145,5.58667,8.31079l-3.03675,3.03675A24.935,24.935,0,0,1,24.958,49.99991Zm6.76758-1.58886c0-3.668,1.88964-10.06739,5.94726-12.15625a6.65259,6.65259,0,0,1,3.08594-.72657c2.4082,0,5.21,1.13184,8.36914,3.38867a36.97365,36.97365,0,0,0,6.22748,3.60651l-5.2461,5.24609c-1.24469-.313-2.52978-.71539-4.06536-1.25592a40.60589,40.60589,0,0,1-2.10938-5.06543,1.49986,1.49986,0,1,0-2.82812,1,43.75966,43.75966,0,0,0,1.7611,4.37915,35.11369,35.11369,0,0,1-5.03161,1.14136,1.50006,1.50006,0,0,0,.24609,2.97949,1.5509,1.5509,0,0,0,.25-.0205,37.99334,37.99334,0,0,0,6.61957-1.61951c.98053.34607,1.87579.6441,2.72046.89862L41.38177,56.497C35.68579,54.91587,31.72559,51.847,31.72559,48.41105Zm7.25616,10.486L36.50085,61.378c-2.943-1.64239-4.77526-3.79461-4.77526-6.12219v-.52911A19.48346,19.48346,0,0,0,38.98175,58.89707Zm3.32239.9198A36.36985,36.36985,0,0,0,50,60.62589c7.8703,0,14.59521-2.34326,18.27441-5.89923v.52911c0,4.99512-8.36914,9.21485-18.27441,9.21485a31.186,31.186,0,0,1-10.58148-1.76813ZM50,57.62589a33.90841,33.90841,0,0,1-5.11572-.38916l6.18023-6.18024a49.0791,49.0791,0,0,0,6.09467.73737c.03613.00293.07227.0039.1084.0039a1.49994,1.49994,0,0,0,.10449-2.99609c-1.40936-.1-2.59485-.21539-3.692-.36072l4.70118-4.70117c1.85382.65466,3.53222,1.09723,4.98986,1.47888,4.03711,1.05762,4.90332,1.44922,4.90332,3.19239C68.27441,53.40616,59.90527,57.62589,50,57.62589Zm0,17.416a24.935,24.935,0,0,1-16.60339-6.3175l3.70648-3.70648A32.83778,32.83778,0,0,0,50,67.47062c11.92969,0,21.27441-5.36524,21.27441-12.21485V48.41105c0-4.22364-3.31054-5.08985-7.14355-6.09375-1.0177-.26661-2.15045-.56464-3.37683-.95032l7.97046-7.97046A25.02406,25.02406,0,0,1,50,75.0419Z"
-            />
-          </svg>
-          <svg
-            class="card_meat hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            width="33.826"
-            height="27.787"
-            viewBox="0 0 33.826 27.787"
-          >
-            <g
-              id="iconfinder_Disease-64_5766076"
-              transform="translate(-28.726 -32.518)"
-            >
-              <path
-                id="Path_5"
-                data-name="Path 5"
-                d="M56.873,40.308a29.482,29.482,0,0,1-10.541-4.644c-4.459-3.185-8.356-3.956-11.585-2.3-4.387,2.258-6.021,8.427-6.021,11.784v5.442c0,5.445,7.429,9.711,16.913,9.711s16.913-4.265,16.913-9.711V45.153C62.552,41.8,59.92,41.106,56.873,40.308Zm3.294,10.286c0,3.971-6.653,7.326-14.528,7.326s-14.528-3.355-14.528-7.326v-.421c2.925,2.827,8.271,4.69,14.528,4.69s11.6-1.863,14.528-4.69ZM45.639,52.479c-7.875,0-14.528-3.355-14.528-7.326,0-2.916,1.5-8,4.728-9.664a5.288,5.288,0,0,1,2.453-.578c1.915,0,4.142.9,6.654,2.694a31.56,31.56,0,0,0,11.323,5.01c3.21.841,3.9,1.152,3.9,2.538C60.167,49.124,53.514,52.479,45.639,52.479Z"
-                fill="var(--beige)"
-              />
-              <path
-                id="Path_6"
-                data-name="Path 6"
-                d="M53.11,47.089a28.885,28.885,0,0,1-9.005-1.819,32.3,32.3,0,0,1-1.678-4.027,1.192,1.192,0,1,0-2.248.795,34.817,34.817,0,0,0,1.4,3.481,27.9,27.9,0,0,1-4,.907,1.193,1.193,0,0,0,.2,2.369,1.237,1.237,0,0,0,.2-.016,30.186,30.186,0,0,0,5.262-1.288,31.324,31.324,0,0,0,9.7,1.976c.029,0,.057,0,.086,0a1.192,1.192,0,0,0,.083-2.382Z"
-                transform="translate(-1.611 -1.626)"
-                fill="var(--beige)"
-              />
-            </g>
-          </svg>
-
+          <img src="./Veg.svg" class="card_veg hidden" />
+          <img src="./disease.svg" class="card_meat hidden" />
           <div class="vertical_separator"></div>
           <span class="price"></span>
         </div>
       </article>
     </template>
-    <div class="modal">
-      <h3 class="modal_heading">Russian ringbread</h3>
-      <p class="long_desc">
-        Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen
-        blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt,
-        godt med Karapatisk bjerggedsmør.
-      </p>
-      <img
-        class="modal_image"
-        src="/imgs/medium/ringbroed-md.jpg"
-        alt="russiskbroed"
-      />
-      <div class="modal_footer">
-        <span class="region"> Karapatien</span>
-        <div class="vertical_separator1"></div>
-        <img class="veg_icon" src="/Veg.svg" alt="vegetarian icon" />
-        <div class="vertical_separator2"></div>
-        <img class="lactose" src="/Lactosemdpi.svg" alt="lactose" />
-        <div class="vertical_separator3"></div>
-        <span class="details_price"> 59,-</span>
-        <div class="stars">To be designed and coded in!!!</div>
+    <div class="modal_bg hide">
+      <div class="modal">
+        <div class="modal_content">
+          <h3 class="modal_heading">Russian ringbread</h3>
+          <p class="long_desc">
+            Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen
+            blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt,
+            godt med Karapatisk bjerggedsmør.
+          </p>
+          <div class="modal_footer">
+            <span class="region"> Karapatien</span>
+            <div class="vertical_separator"></div>
+            <img
+              class="veg_icon hidden"
+              src="./Veg_black.svg"
+              alt="vegetarian icon"
+            />
+            <img src="./disease_black.svg" class="meat hidden" alt="disease" />
+
+            <div class="vertical_separator"></div>
+            <div class="allergens"></div>
+            <div class="vertical_separator"></div>
+            <span class="details_price"> 59,-</span>
+          </div>
+        </div>
+
+        <img class="modal_image" src="" alt="russiskbroed" />
+
+        <div class="stroke"></div>
       </div>
-      <div class="stroke"></div>
     </div>
+
     <main>
-      <span class="starters">STARTERS</span>
-      <div class="productlist"></div>
+      <!--
+    <h2>STARTERS</h2>
+    <div class="productlist starter-data">
+
+    </div>
+    <h2>MAIN</h2>
+    <div class="productlist main-data">
+
+    </div>
+    <h2>des</h2>
+    <div class="productlist dessert-data">
+-->
+      <!--
+    </div>
+    <h2>dri</h2>
+    <div class="productlist drinks-data">
+
+    </div>
+    <h2>side</h2>
+    <div class="productlist sideorders-data">
+
+    </div>-->
     </main>
     <script src="script.js"></script>
   </body>
